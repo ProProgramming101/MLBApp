@@ -6,6 +6,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import TabBarIcon from '../components/TabBarIcon';
 import TestScreen from '../screens/TestScreen';
 import GamesScreen from '../screens/GamesScreen';
+import VideosScreen from '../screens/VideosScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const TestStack = createStackNavigator({
@@ -24,6 +25,7 @@ TestStack.navigationOptions = {
 
 const GamesStack = createStackNavigator({
   Games: GamesScreen,
+  Videos: VideosScreen,
 });
 
 GamesStack.navigationOptions = {
@@ -51,7 +53,7 @@ SettingsStack.navigationOptions = {
 };
 
 export default createBottomTabNavigator({
-  TestStack,
+  //TestStack,
   GamesStack,
-  SettingsStack,
+  //SettingsStack,
 });

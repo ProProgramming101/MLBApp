@@ -58,7 +58,7 @@ export default class DateBar extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: { flexDirection: "row", justifyContent: "space-between", },
-  date: { paddingTop: 5, },
+  container: { flexDirection: "row", justifyContent: "space-between", backgroundColor: "#DDDDDD", paddingVertical: 10, },
+  date: { paddingTop: 8, fontWeight: "bold", },
   icon: { fontSize: 30, color: "gray" },
 });
